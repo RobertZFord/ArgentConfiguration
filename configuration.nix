@@ -51,10 +51,14 @@
     # tmux
     git
     w3m
+
+    cryptsetup
+    gcc
+
     firefox
     weechat
+
     gcs
-    cryptsetup
   ];
   # after reflection, I think wpa_supplicant may not be necessary.  E:  it is not
 
