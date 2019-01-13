@@ -53,7 +53,6 @@
     w3m
 
     cryptsetup
-    gcc
 
     firefox
     weechat
