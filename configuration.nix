@@ -53,6 +53,8 @@
     w3m
 
     cryptsetup
+    usbutils
+    pciutils
 
     firefox
     weechat
