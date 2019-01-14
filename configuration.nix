@@ -90,6 +90,9 @@
         plasma5.enable = true;
       };
     };
+    udev.extraRules = ''
+    SUBSYSTEM=="usb", ATTR{idVendor}=="05c8", ATTR{idProduct}=="036e", ATTR{authorized}="0"
+    '';
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
