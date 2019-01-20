@@ -92,6 +92,8 @@
     };
     udev.extraRules = ''
     SUBSYSTEM=="usb", ATTR{idVendor}=="05c8", ATTR{idProduct}=="036e", ATTR{authorized}="0"
+    SUBSYSTEM=="net", ATTR{address}=="02:2c:80:13:92:63", NAME="eth0"
+    SUBSYSTEM=="net", ATTR{address}=="9c:d2:1e:60:31:e9", NAME="wlan0"
     '';
   };
 
