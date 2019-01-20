@@ -57,6 +57,9 @@
     usbutils
     pciutils
 
+    unzip
+    p7zip
+
     firefox
     weechat
 
