@@ -51,6 +51,7 @@
     # tmux
     git
     w3m
+    parted
 
     cryptsetup
     usbutils
