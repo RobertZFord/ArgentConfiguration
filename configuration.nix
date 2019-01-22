@@ -56,6 +56,7 @@
     cryptsetup
     usbutils
     pciutils
+    lsof
 
     unzip
     p7zip
