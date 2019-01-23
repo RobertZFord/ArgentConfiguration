@@ -64,10 +64,10 @@
     firefox
     weechat
 
-    inkscape
-    gimp
+    # inkscape
+    # gimp
 
-    gcs
+    # gcs
   ];
   # after reflection, I think wpa_supplicant may not be necessary.  E:  it is not
 
