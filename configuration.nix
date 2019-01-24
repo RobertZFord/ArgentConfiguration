@@ -92,7 +92,8 @@
       };      
       desktopManager = {
         xterm.enable = false;
-        plasma5.enable = true;
+        #plasma5.enable = true;
+        xfce.enable = true;
       };
     };
     udev.extraRules = ''
