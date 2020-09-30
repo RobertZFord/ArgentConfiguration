@@ -52,6 +52,7 @@
   environment.systemPackages = with pkgs; [
     wget
     vim
+    emacs
     networkmanager
     tmux
     git
