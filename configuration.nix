@@ -17,6 +17,12 @@
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;
     };
+    # for some reason, when using the touchpad, the kernel cpu usage
+    # spike to between 50-100%.  this module stood out in operf (from
+    # oprofile) during profiling.  blacklisting it does not appear to
+    # negatively affect the system.  the touchpad still works perfectly
+    # fine, and now the kernel cpu usage is almost non-existent.
+    blacklistedKernelModules = [ "gpio_lynxpoint" ];
     consoleLogLevel = 3; # if this is left on the default '4', the cdc_ether module spams a message about 'kevent 12 may have been dropped'
   };
 
