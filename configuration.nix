@@ -35,6 +35,11 @@
   };
 
   networking = {
+    useDHCP = false;
+    interfaces = {
+        #eth0.useDHCP = true;
+        wlan0.useDHCP = true;
+    };
     hostName = "argent"; # Define your hostname.
     networkmanager.enable = true;
   };
@@ -128,7 +133,7 @@
       clock24 = true;
       newSession = true;
       secureSocket = true;
-      extraTmuxConf = ''
+      extraConfig = ''
         set -g renumber-windows on
         set -g status-position top
         set -g status-fg white
@@ -149,6 +154,6 @@
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
   # should.
-  system.stateVersion = "18.09"; # Did you read the comment?
+  system.stateVersion = "20.03"; # Did you read the comment?  ...I did not.  -RF 2020-09-29 22:15:05 -04:00
 
 }
