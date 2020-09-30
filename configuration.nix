@@ -63,6 +63,9 @@
     usbutils
     pciutils
     lsof
+    htop
+    oprofile
+    glxinfo
 
     unzip
     p7zip
