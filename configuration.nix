@@ -53,7 +53,7 @@
     wget
     vim
     networkmanager
-    # tmux
+    tmux
     git
     w3m
     parted
