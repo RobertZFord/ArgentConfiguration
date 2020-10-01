@@ -56,33 +56,28 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    wget
-    vim
-    emacs
-    networkmanager
-    tmux
-    git
-    w3m
-    parted
+    wget       # downloads stuff
+    vim        # edits text
+    emacs      # also edits text
+    networkmanager # manage wireless network connections
+    tmux       # terminal multiplexer
+    git        # source control
+    w3m        # text web browser
+    parted     # partition editor
 
-    cryptsetup
-    usbutils
-    pciutils
-    lsof
-    htop
-    oprofile
-    glxinfo
+    cryptsetup # LUKS for dm-crypt
+    usbutils   # enumerates usb properties
+    pciutils   # same with onboard components
+    lsof       # show file handles
+    htop       # text based resource usage display
+    oprofile   # profiles system calls
+    glxinfo    # displays GL info and provides simple GL test application
 
-    unzip
-    p7zip
+    unzip      # simple .zip support
+    p7zip      # provides .7z support
 
-    firefox
-    weechat
-
-    # inkscape
-    # gimp
-
-    # gcs
+    firefox    # INTERNET!
+    weechat    # how neckbeards talk to each other
   ];
   # after reflection, I think wpa_supplicant may not be necessary.  E:  it is not
 
