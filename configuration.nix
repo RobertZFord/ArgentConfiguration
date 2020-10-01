@@ -73,6 +73,13 @@
     oprofile   # profiles system calls
     glxinfo    # displays GL info and provides simple GL test application
 
+    sxhkd      # simple X hotkey daemon
+    nitrogen   # sets background pictures
+    polybar    # provides a bar for statuses
+    rofi       # app launcher
+    picom      # compositor
+    alacritty  # terminal
+
     unzip      # simple .zip support
     p7zip      # provides .7z support
 
@@ -104,6 +111,9 @@
         xterm.enable = false;
         #plasma5.enable = true;
         xfce.enable = true;
+      };
+      windowManager = {
+          bspwm.enable = true;
       };
     };
     udev.extraRules = ''
