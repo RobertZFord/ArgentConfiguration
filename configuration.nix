@@ -58,7 +58,7 @@
   environment.systemPackages = with pkgs; [
     wget       # downloads stuff
     vim        # edits text
-    emacs      # also edits text
+    emacs-nox  # also edits text, without X support
     networkmanager # manage wireless network connections
     tmux       # terminal multiplexer
     git        # source control
