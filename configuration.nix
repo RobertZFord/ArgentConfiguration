@@ -59,6 +59,7 @@
     wget       # downloads stuff
     vim        # edits text
     emacs-nox  # also edits text, without X support
+    jq         # for prettified JSON in a terminal
     networkmanager # manage wireless network connections
     tmux       # terminal multiplexer
     git        # source control
