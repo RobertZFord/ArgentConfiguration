@@ -135,7 +135,11 @@
     users.rob = {
       isNormalUser = true;
       home = "/home/rob";
-      extraGroups = [ "wheel" "networkmanager" ];
+      extraGroups = [
+        "wheel"
+        "networkmanager"
+        "video"
+      ];
       uid = 1000;
       hashedPassword = "$6$q6FCTMCmZxPuo$7Q9k30H8e.VtwahG6FUbG9QhCy.uV90DfhYosMRBiOychFqGoHCDpIJszqQfMU3.xvztuPCrGHlZ5tvfxD3ph1";
       createHome = true;
@@ -143,6 +147,9 @@
   };
 
   programs = {
+    light = {
+      enable = true;
+    };
     tmux = {
       enable = true;
       baseIndex = 1;
