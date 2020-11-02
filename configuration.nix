@@ -111,7 +111,7 @@
       desktopManager = {
         xterm.enable = false;
         #plasma5.enable = true;
-        xfce.enable = true;
+        #xfce.enable = true;
       };
       windowManager = {
           bspwm.enable = true;
