@@ -90,7 +90,18 @@
   # after reflection, I think wpa_supplicant may not be necessary.  E:  it is not
 
   sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  hardware = {
+      pulseaudio.enable = true;
+      opengl = {
+          enable = true; # defaults to true, but still nice to define it here
+	  extraPackages = with pkgs; [
+	      intel-media-driver
+	      vaapiIntel
+	      vaapiVdpau
+	      libvdpau-va-gl
+	  ];
+      };
+  };
 
   services = {
     ntp = {
