@@ -43,8 +43,8 @@
   networking = {
     useDHCP = false;
     interfaces = {
-        #eth0.useDHCP = true;
-        wlan0.useDHCP = true;
+      #eth0.useDHCP = true;
+      wlan0.useDHCP = true;
     };
     hostName = "argent"; # Define your hostname.
     networkmanager.enable = true;
@@ -93,16 +93,16 @@
 
   sound.enable = true;
   hardware = {
-      pulseaudio.enable = true;
-      opengl = {
-          enable = true; # defaults to true, but still nice to define it here
-	  extraPackages = with pkgs; [
-	      intel-media-driver
-	      vaapiIntel
-	      vaapiVdpau
-	      libvdpau-va-gl
-	  ];
-      };
+    pulseaudio.enable = true;
+    opengl = {
+      enable = true; # defaults to true, but still nice to define it here
+      extraPackages = with pkgs; [
+        intel-media-driver
+        vaapiIntel
+        vaapiVdpau
+        libvdpau-va-gl
+      ];
+    };
   };
 
   services = {
@@ -127,7 +127,7 @@
         #xfce.enable = true;
       };
       windowManager = {
-          bspwm.enable = true;
+        bspwm.enable = true;
       };
     };
     udev.extraRules = ''
