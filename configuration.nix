@@ -86,8 +86,6 @@
 
     firefox    # INTERNET!
     weechat    # how neckbeards talk to each other
-
-    ncmpcpp    # music client
   ];
   # after reflection, I think wpa_supplicant may not be necessary.  E:  it is not
 
@@ -136,10 +134,6 @@
     SUBSYSTEM=="net", ATTR{address}=="02:2c:80:13:92:63", NAME="eth0"
     SUBSYSTEM=="net", ATTR{address}=="9c:d2:1e:60:31:e9", NAME="wlan0"
     '';
-    mpd = {
-      enable = true;
-      # default socket is @ 127.0.0.1:6600
-    };
   };
 
   fonts.fonts = with pkgs; [
